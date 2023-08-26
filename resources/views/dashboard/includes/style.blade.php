@@ -1,6 +1,19 @@
 <!-- Icons css -->
 <link href="{{asset('assets/css/icons.css')}}" rel="stylesheet">
 
+
+<!-- Internal Data table css -->
+<link href="{{asset('assets/plugins/datatable/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/datatable/css/buttons.bootstrap4.min.css')}}" rel="stylesheet">
+<link href="{{asset('assets/plugins/datatable/css/responsive.bootstrap4.min.css')}}" rel="stylesheet" />
+<link href="{{asset('assets/plugins/datatable/css/jquery.dataTables.min.css')}}" rel="stylesheet">
+<link href="{{asset('assets/plugins/datatable/css/responsive.dataTables.min.css')}}" rel="stylesheet">
+<link href="{{asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
+
+
+<!--  Right-sidemenu css -->
+<link href="{{asset('assets/plugins/sidebar/sidebar.css')}}" rel="stylesheet">
+
 <!--  Custom Scroll bar-->
 <link href="{{asset('assets/plugins/mscrollbar/jquery.mCustomScrollbar.css')}}" rel="stylesheet"/>
 

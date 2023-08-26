@@ -31,5 +31,14 @@ class UserSeeder extends Seeder
             'username' => 'h.elguennouni'
         ]);
         $user->attachRole('Controller');
+
+        $user = User::create([
+            'name' => 'admin system',
+            'unity_id' => 1,
+            'email' => 'admin.system@gmail.com',
+            'password' => bcrypt(123456789),
+            'username' => 'a.mhai'
+        ]);
+        $user->attachRole('admin');
     }
 }
