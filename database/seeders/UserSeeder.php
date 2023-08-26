@@ -20,6 +20,7 @@ class UserSeeder extends Seeder
             'password' => bcrypt(123456789),
             'username' => 'a.biza'
         ]);
+        $user->attachRole('Controller');
 
         $user = User::create([
             'name' => 'hajar elguennouni',
@@ -27,5 +28,6 @@ class UserSeeder extends Seeder
             'password' => bcrypt(123456789),
             'username' => 'h.elguennouni'
         ]);
+        $user->attachRole('Controller');
     }
 }

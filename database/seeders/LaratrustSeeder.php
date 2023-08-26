@@ -18,10 +18,10 @@ class LaratrustSeeder extends Seeder
     public function run()
     {
 
-        $owner = Role::create([
-            'name' => 'owner',
-            'display_name' => 'Project Owner', // optional
-            'description' => 'User is the owner of a given project', // optional
+        $controller = Role::create([
+            'name' => 'Ordonnateur',
+            'display_name' => 'System Ordonnateur', // optional
+            'description' => 'Ordonnateur profile to handle incomes', // optional
         ]);
 
         $admin = Role::create([
@@ -31,10 +31,10 @@ class LaratrustSeeder extends Seeder
         ]);
 
 
-        $moderator = Role::create([
-            'name' => 'moderator',
-            'display_name' => 'Moderator system', // optional
-            'description' => 'User is allowed to modearate posts', // optional
+        $controller = Role::create([
+            'name' => 'Controller',
+            'display_name' => 'System Controller', // optional
+            'description' => 'Controller profile to give visa incomes', // optional
         ]);
 
 
