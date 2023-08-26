@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['prefix' => 'user', 'middleware' => ['role:admin','auth']], function() {
 
-    Route::view('/view', 'dashboard.HR.home')->name('showhome');
+Route::group(['prefix' => 'admin', 'middleware' => ['role:admin','auth']], function() {
+
+    Route::resources([
+        'users' => UserController::class,
+//        'posts' => PostController::class,
+    ]);
 
 });
 
 
-Route::view('/showlog', 'dashboard.HR.auth.login');
+
 
 
 
