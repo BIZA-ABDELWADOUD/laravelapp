@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -12,8 +13,12 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
-        return view('dashboard.HR.admin.users.index');
+        $users = User::whereRoleIs(['Controller','Ordonnateur'])->get();
+        return view('dashboard.HR.admin.users.index',[
+            'users' => $users
+        ]);
     }
 
     /**
