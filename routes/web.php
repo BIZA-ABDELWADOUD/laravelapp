@@ -28,9 +28,9 @@ Route::group(
     //routes for authentication and registration handling
     require __DIR__.'/auth.php';
 
-//    Route::view(LaravelLocalization::transRoute('routes.about'), 'about')->name('about');
+//Route::view(LaravelLocalization::transRoute('routes.about'), 'about')->name('about');
 
-    //routes for authentication and registration handling
+    //routes for admin
     require __DIR__.'/admin.php';
 
 });

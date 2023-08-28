@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
+use App\Models\Unity;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -15,9 +17,15 @@ class UserController extends Controller
     public function index()
 
     {
+//        retrive all unities
+        $unities = Unity::all();
+//        retrieve all roles
+        $roles = Role::where('name','<>','admin')->get();
         $users = User::whereRoleIs(['Controller','Ordonnateur'])->get();
         return view('dashboard.HR.admin.users.index',[
-            'users' => $users
+            'users' => $users,
+            'unities' => $unities,
+            'roles' => $roles
         ]);
     }
 
@@ -39,7 +47,18 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $user = User::create([
+                'name' => $request->name,
+                'unity_id' => $request->unity_id,
+                'email' => $request->email,
+                'password' => bcrypt($request->password),
+                'username' => $request->username,
+            ]);
+        }
+        catch (Exception $e) {
+
+        }
     }
 
     /**
