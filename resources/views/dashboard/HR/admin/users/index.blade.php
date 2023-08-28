@@ -11,7 +11,7 @@
         <!-- container opened -->
         <div class="container">
 
-
+            @include('dashboard.HR.admin.users.modals.add')
 
             <!-- breadcrumb -->
             <div class="breadcrumb-header justify-content-between">
@@ -22,8 +22,8 @@
                 </div>
 
                 <div class="d-flex my-xl-auto right-content">
-                   
-                    <button class="btn btn-secondary btn-block">Secondary</button>
+                    <a class="btn ripple btn-teal" data-target="#modaldemo6" data-toggle="modal" href="">{{trans('modals/user/user.adduser')}}</a>
+
                 </div>
 
             </div>
