@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::group(['prefix' => 'admin', 'middleware' => ['role:admin','auth']], function() {
 
     Route::resources([
@@ -24,6 +22,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['role:admin','auth']], funct
     ]);
 
 });
+
+
 
 
 

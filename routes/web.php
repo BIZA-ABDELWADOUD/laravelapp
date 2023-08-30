@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,31 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-//all routes that shoud be translated
-
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
-
-    //route to handle dashboard with HR
-    Route::view('/dashboard','dashboard.HR.dashboard')->middleware(['auth'])->name('dashboard');
-
-    //routes for authentication and registration handling
-    require __DIR__.'/auth.php';
-
-//Route::view(LaravelLocalization::transRoute('routes.about'), 'about')->name('about');
-
-    //routes for admin
-    require __DIR__.'/admin.php';
-
-});
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-
