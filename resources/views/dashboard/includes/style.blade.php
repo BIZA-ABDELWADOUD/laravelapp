@@ -17,6 +17,10 @@
 <!--  Custom Scroll bar-->
 <link href="{{asset('assets/plugins/mscrollbar/jquery.mCustomScrollbar.css')}}" rel="stylesheet"/>
 
+
+<!--Internal   Notify -->
+<link href="{{asset('assets/plugins/notify/css/notifIt.css')}}" rel="stylesheet"/>
+
 <!--  Sidebar css -->
 <link href="{{asset('assets/plugins/sidebar/sidebar.css')}}" rel="stylesheet">
 
@@ -40,3 +44,8 @@
 
 <!--- Animations css-->
 <link href="{{asset('assets/css/animate.css')}}" rel="stylesheet">
+
+
+<!--Internal  treeview -->
+<link href="{{asset('assets/plugins/treeview/treeview.css')}}" rel="stylesheet" type="text/css" />
+

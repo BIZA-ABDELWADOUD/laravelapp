@@ -55,8 +55,16 @@ class UserController extends Controller
                 'password' => bcrypt($request->password),
                 'username' => $request->username,
             ]);
+            $role = $request->role;
+            $user->attachRole($role);
+
+            session()->flash('adduser');
+            return redirect()->route('users.index');
         }
+
         catch (Exception $e) {
+            session()->flash('erroraddinguser');
+            return redirect()->route('users.index');
 
         }
     }

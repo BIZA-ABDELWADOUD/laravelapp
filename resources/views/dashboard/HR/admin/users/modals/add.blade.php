@@ -38,11 +38,16 @@
                         </div>
                     </div>
                 </div>
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Role</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <select class="form-control" id="" name="role" placeholder="Enter email">
+                                    @foreach($roles as $role)
+                                        <option value="{{$role->name}}">{{$role->name}}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -60,13 +65,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">confirmation</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                             </div>
                         </div>
                     </div>

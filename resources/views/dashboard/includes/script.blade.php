@@ -72,6 +72,12 @@
 <!-- Horizontalmenu js-->
 <script src="{{asset('assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js')}}"></script>
 
+
+<!--Internal  Notify js -->
+<script src="{{asset('assets/plugins/notify/js/notifIt.js')}}"></script>
+<script src="{{asset('assets/plugins/notify/js/notifit-custom.js')}}"></script>
+
+
 <!-- Internal Map -->
 <script src="{{asset('assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
 <script src="{{asset('assets/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
