@@ -10,19 +10,10 @@
                         <ul class="sub-menu">
                             <li aria-haspopup="true"><a href="{{route('users.index')}}" class="slide-item">{{trans('dashboard/fixed_items.page_user_management')}}</a></li>
                             <li aria-haspopup="true"><a href="chart-flot.html" class="slide-item">Flot Charts</a></li>
-                            <li aria-haspopup="true"><a href="chart-chartjs.html" class="slide-item">ChartJS</a></li>
-                            <li aria-haspopup="true"><a href="chart-echart.html" class="slide-item">Echart</a></li>
-                            <li aria-haspopup="true"><a href="chart-sparkline.html" class="slide-item">Sparkline</a></li>
-                            <li aria-haspopup="true"><a href="chart-peity.html" class="slide-item"> Chart-peity</a></li>
+
                         </ul>
                     </li>
-                    <li aria-haspopup="true"><a href="#" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3.31 11l2.2 8.01L18.5 19l2.2-8H3.31zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" opacity=".3"/><path d="M22 9h-4.79l-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM12 4.8L14.8 9H9.2L12 4.8zM18.5 19l-12.99.01L3.31 11H20.7l-2.2 8zM12 13c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg> E-Commerce<i class="fe fe-chevron-down horizontal-icon"></i></a>
-                        <ul class="sub-menu">
-                            <li aria-haspopup="true"><a href="products.html" class="slide-item"> Products</a></li>
-                            <li aria-haspopup="true"><a href="product-details.html" class="slide-item">Product-Details</a></li>
-                            <li aria-haspopup="true"><a href="product-cart.html" class="slide-item">Shopping Cart</a></li>
-                        </ul>
-                    </li>
+
                     <li aria-haspopup="true"><a href="#" class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.26 9L12 13.47 17.74 9 12 4.53z" opacity=".3"/><path d="M19.37 12.8l-7.38 5.74-7.37-5.73L3 14.07l9 7 9-7zM12 2L3 9l1.63 1.27L12 16l7.36-5.73L21 9l-9-7zm0 11.47L6.26 9 12 4.53 17.74 9 12 13.47z"/></svg> Elements<i class="fe fe-chevron-down horizontal-icon"></i></a>
                         <div class="horizontal-megamenu clearfix">
                             <div class="container">
