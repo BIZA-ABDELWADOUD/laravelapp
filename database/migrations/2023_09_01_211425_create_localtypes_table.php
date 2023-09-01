@@ -15,6 +15,7 @@ class CreateLocaltypesTable extends Migration
     {
         Schema::create('localtypes', function (Blueprint $table) {
             $table->id();
+            $table->string('designation')->unique();
             $table->timestamps();
         });
     }
