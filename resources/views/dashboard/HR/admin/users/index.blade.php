@@ -19,7 +19,7 @@
             <div class="breadcrumb-header justify-content-between">
                 <div class="my-auto">
                     <div class="d-flex">
-                        <h4 class="content-title mb-0 my-auto">Users</h4><span class="text-muted mt-1 tx-13 ml-2 mb-0">/ Users Management</span>
+                        <h4 class="content-title mb-0 my-auto">{{trans('dashboard/fixed_items.users_heading')}}</h4><span class="text-muted mt-1 tx-13 ml-2 mb-0">/ {{trans('dashboard/fixed_items.users_heading_specification')}}</span>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->username}}</td>
-                                <td>{{$user->name}}</td>
+                                <td>{{$user->unity->description}}</td>
                                 <td>$654,765</td>
 
                             </tr>

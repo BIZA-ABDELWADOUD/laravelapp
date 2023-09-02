@@ -13,13 +13,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">{{trans('modals/user/user.Name')}}</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Enter email">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{trans('modals/user/user.Email')}}</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                         </div>
                     </div>
@@ -27,13 +27,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="username">Username</label>
+                            <label for="username">{{trans('modals/user/user.Username')}}</label>
                             <input type="text" class="form-control" id="username" name="username" placeholder="Enter email">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="mobile">Mobile</label>
+                            <label for="mobile">{{trans('modals/user/user.Mobile')}}</label>
                             <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter email">
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Role</label>
+                                <label for="exampleInputEmail1">{{trans('modals/user/user.Role')}}</label>
                                 <select class="form-control" id="" name="role" placeholder="Enter email">
                                     @foreach($roles as $role)
                                         <option value="{{$role->name}}">{{$role->name}}</option>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="unity_id">Unity</label>
+                                <label for="unity_id">{{trans('modals/user/user.Unity')}}</label>
                                 <select class="form-control" id="unity_id" name="unity_id" placeholder="Enter email">
                                     @foreach($unities as $unity)
                                         <option value="{{$unity->id}}">{{$unity->description}}</option>
@@ -64,13 +64,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Password</label>
+                                <label for="exampleInputEmail1">{{trans('modals/user/user.Password')}}</label>
                                 <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">confirmation</label>
+                                <label for="exampleInputEmail1">{{trans('modals/user/user.confirmation')}}</label>
                                 <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                             </div>
                         </div>
@@ -78,8 +78,8 @@
 
             </div>
             <div class="modal-footer">
-                <button class="btn ripple btn-primary" type="submit">Save changes</button>
-                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+                <button class="btn ripple btn-primary" type="submit">{{trans('modals/user/user.Save')}}</button>
+                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">{{trans('modals/user/user.Close')}}</button>
                 </form>
             </div>
         </div>
